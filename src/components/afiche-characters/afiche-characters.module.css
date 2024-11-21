@@ -1,0 +1,5 @@
+.afiche{
+  display: flex;
+  justify-content: center;
+  margin: 26px auto 16px;
+}

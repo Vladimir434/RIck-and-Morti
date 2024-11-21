@@ -1,0 +1,12 @@
+.header__nav{
+  width: 316px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.header__nav a {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
