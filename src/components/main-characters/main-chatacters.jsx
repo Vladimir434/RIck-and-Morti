@@ -1,6 +1,6 @@
 import AficheCharacters from "../afiche-characters/afiche-characters"
-import CardList from "../card__list/card__list"
 import Afiche from '../../assets/afiche.svg'
+import CardList from "../card__list/card__list_characters"
 
 const MainChatacters = () => {
   return (

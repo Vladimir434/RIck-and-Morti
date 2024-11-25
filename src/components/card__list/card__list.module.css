@@ -59,9 +59,11 @@
 .loat__more{
   width: 154px;
   height: 36px;
+  font-size: 14px;
+  font-weight: 500;
   color: #2196F3;
   box-shadow: 0px 2px 4px 0px #00000024;
-  margin: 0 auto 47px;
+  margin: 62px auto 47px;
   border: none;
   outline: none;
   display: block;

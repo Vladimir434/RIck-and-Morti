@@ -1,0 +1,20 @@
+.information__text{
+  width: 92%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 6px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 45px;
+}
+.name{
+  font-size: 16px;
+  font-weight: 700;
+}
+.info{
+  font-size: 14px;
+  font-weight: 400;
+  color: #6E798C;
+}

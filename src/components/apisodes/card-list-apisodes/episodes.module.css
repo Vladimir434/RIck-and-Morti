@@ -1,11 +1,64 @@
-.card__episodes_item{
-  border: 1px solid #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .card__list{
+  max-width: 1020px;
+  width: 100%;
+  height: auto;
   display: grid;
-  grid-template: repeat(1, 1fr) / repeat(4, 20%);
+  grid-template: repeat(1, 128px) / repeat(4, 1fr);
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 24px 20px;
+  grid-auto-rows: 128px;
+  padding: 0 25px;
 }
+
+.filter_by_name{
+  max-width: 500px;
+  min-width: 312px;
+  height: 56px;
+  border: 1px solid #00000080;
+  border-radius: 8px;
+  row-gap: 8px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 65px;
+  padding-left: 25px;
+}
+.filter_by_name input{
+  border: none;
+  outline: none;
+}
+
+.card__episodes_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .name{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .date{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .episodes{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .loat__more{
+    width: 154px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2196F3;
+    box-shadow: 0px 2px 4px 0px #00000024;
+    margin: 62px auto 47px;
+    border: none;
+    outline: none;
+    display: block;
+  }
