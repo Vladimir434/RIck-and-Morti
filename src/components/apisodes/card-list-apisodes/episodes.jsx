@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import s from "../card-list-apisodes/episodes.module.css";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Search from "../../../assets/sersh.svg";
 
 const Episodes = () => {
@@ -44,11 +44,11 @@ const Episodes = () => {
       </div>
       <div className={s.card__list}>
         {data.map((item, index) => (
-          <div className={s.card__episodes_item} key={index}>
+          <Link to={`/episodedetails/${item.id}`} className={s.card__episodes_item} key={index}>
             <h3 className={s.name}>{item.name}</h3>
             <h3 className={s.date}>{item.air_date}</h3>
             <h3 className={s.episode}>{item.episode}</h3>
-          </div>
+          </Link>
         ))}
       </div>
       <button className={s.loat__more} onClick={handlePageChange}>

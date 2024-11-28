@@ -45,10 +45,12 @@
   .date{
     font-size: 14px;
     font-weight: 400;
+    color: #00000099;
   }
-  .episodes{
+  .episode{
     font-size: 14px;
     font-weight: 700;
+    color: #00000099;
   }
   .loat__more{
     width: 154px;

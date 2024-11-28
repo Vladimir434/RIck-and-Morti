@@ -1,0 +1,46 @@
+.main_wrapper{
+  max-width: 977px;
+  position: relative;
+  margin: 90px auto 0;
+
+
+}
+.main_cont{
+  position: relative;
+  max-width: 977px;
+  min-width: 312px;
+  height: auto;
+  margin: 0 auto ;
+
+}
+.name{
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.info{
+  display: grid;
+  grid-template: repeat(1, 1fr)/ repeat(2, 1fr);
+  justify-items: center;
+}
+.date > :first-child,
+.episode > :first-child{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.date > :last-child,
+.episode > :last-child{
+  font-size: 14px;
+  font-weight: 400;
+  color: #00000099;
+}
+.back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

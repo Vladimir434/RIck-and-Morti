@@ -1,13 +1,11 @@
 .information__text{
-  width: 92%;
   height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 6px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 45px;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  padding: 15px 0 15px;
+  border-bottom: 1px solid rgb(162, 159, 255);
 }
 .name{
   font-size: 16px;
@@ -17,4 +15,9 @@
   font-size: 14px;
   font-weight: 400;
   color: #6E798C;
+}
+.info_text{
+  display: flex;
+  row-gap: 6px;
+  flex-direction: column;
 }

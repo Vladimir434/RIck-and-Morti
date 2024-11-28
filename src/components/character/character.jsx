@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import {useParams } from "react-router-dom";
 import AficheCahacter from "./afiche/afiche-cahacter";
 import s from "./character.module.css";
 import CharacterInfo from "./character_info/cahrscter-info";
+import CharacterEpisodeInfo from "./character_info/info-episodes/character_episode-info";
 
 const Character = () => {
   const param = useParams("");
@@ -21,6 +22,8 @@ const Character = () => {
       const episodeRes = await Promise.all(
         episodeLink.map((url) => fetch(url).then((res) => res.json()))
       );
+      console.log(dataJson);
+
       setEpisode(episodeRes);
     };
     getData();
@@ -34,22 +37,29 @@ const Character = () => {
       <div className={s.main_info}>
         <div className={s.innformstion}>
           <h2 className={s.main_info_title}>Information</h2>
-          <CharacterInfo name={"Gender"} info={data?.gender} />
-          <CharacterInfo name={"Status"} info={data?.status} />
-          <CharacterInfo name={"Specie"} info={data?.species} />
-          <CharacterInfo name={"Origin"} info={data?.origin?.name} />
-          <CharacterInfo name={"Type"} info={data?.type || "неизвестно"} />
-          <CharacterInfo name={"Location"} info={data?.location?.name} />
+          <div className={s.info__pe}>
+            <CharacterInfo name={"Gender"} info={data?.gender || "неизвестно"} />
+            <CharacterInfo name={"Status"} info={data?.status || "неизвестно"} />
+            <CharacterInfo name={"Specie"} info={data?.species || "неизвестно"} />
+            <CharacterInfo name={"Origin"} info={data?.origin?.name || "неизвестно"} />
+            <CharacterInfo name={"Type"} info={data?.type || "неизвестно"} />
+            <CharacterInfo name={"Location"} info={data?.location?.name || "неизвестно"} arrow={'>'}/>
+          </div>
         </div>
         <div className={s.episoge}>
           <h2 className={s.main_info_title}>Episodes</h2>
-          <Link>
+          <div className={s.episode__info}>
             {episode.map((ep) => (
-              <div key={ep.id}>
-                {ep.name}
-              </div>
+              <CharacterEpisodeInfo
+                key={ep.id}
+                origin={ep.episode}
+                name={ep.name}
+                date={ep.air_date}
+                img={">"}
+                id={ep.id}
+              />
             ))}
-          </Link>
+          </div>
         </div>
       </div>
     </>

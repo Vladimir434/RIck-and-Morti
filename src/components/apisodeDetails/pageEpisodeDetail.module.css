@@ -1,0 +1,19 @@
+.main{
+  max-width: 977px;
+  width: 100%;
+  height: auto;
+  margin: 64px auto 35px;
+}
+.card_list{
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(4, 24%);
+  justify-content: space-between;
+  margin: 24px auto 0;
+  row-gap: 24px;
+  grid-auto-rows: auto;
+}
+.main_title{
+  font-size: 20px;
+  font-weight: 500;
+  color: #8E8E93;
+}
