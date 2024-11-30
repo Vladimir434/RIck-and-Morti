@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import Back from "../../../assets/arrow.svg";
 
 import s from "./icon.module.css";
-const Icon = ({ name, dateNeme, dateInfo, episodeName, episodeInfo }) => {
+const Icon = ({ name, dateNeme, dateInfo, episodeName, episodeInfo, url}) => {
   return (
     <div className={s.main_wrapper}>
       <div className={s.main_cont}>
-        <Link className={s.back} to={"/episode"}>
+        <Link className={s.back} to={url}>
           <img src={Back} alt="неполадки" />
           GO BACK
         </Link>

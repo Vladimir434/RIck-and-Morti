@@ -30,7 +30,7 @@ const PageEpisodeDetails = () => {
 
   return (
     <>
-    <Icon name={episode.name} episodeName={'Episode'} episodeInfo={episode.episode} dateNeme={'Date'} dateInfo={episode.air_date}/>
+    <Icon name={episode.name} episodeName={'Episode'} episodeInfo={episode.episode} dateNeme={'Date'} dateInfo={episode.air_date} url={'/episode'}/>
       <div className={s.main}>
         <h2 className={s.main_title}>Cast</h2>
         <div className={s.card_list}>

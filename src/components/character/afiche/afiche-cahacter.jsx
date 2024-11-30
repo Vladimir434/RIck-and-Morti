@@ -2,8 +2,13 @@
 import { Link } from "react-router-dom";
 import Back from "../../../assets/arrow.svg";
 import s from "../afiche/afiche-character.module.css";
+import { useContext } from "react";
+import { userContext } from "../../../../contaxt/userContext";
 
 const AficheCahacter = ({ img, name }) => {
+  const provierDate = useContext(userContext)
+  console.log(provierDate);
+  
   return (
     <>
       <div className={s.logo_contaiber}>

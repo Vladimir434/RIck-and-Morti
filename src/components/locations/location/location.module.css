@@ -1,0 +1,42 @@
+.main{
+  max-width: 977px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+.card_list{
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(4, 24%);
+  grid-auto-rows: auto;
+  row-gap: 24px;
+  justify-content: space-between;
+}
+.card_item{
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.card_item img{
+  width: 100%;
+  height: auto;
+}
+.text{
+  padding: 12px 16px;
+}
+
+.main_title{
+  font-size: 20px;
+  font-weight: 500;
+  color: #8E8E93;
+  margin-bottom: 24px;
+}
+
+.text > :first-child{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text > :last-child{
+  font-size: 14px;
+  font-weight: 400;
+  color: #00000099;
+}

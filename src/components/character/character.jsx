@@ -43,7 +43,7 @@ const Character = () => {
             <CharacterInfo name={"Specie"} info={data?.species || "неизвестно"} />
             <CharacterInfo name={"Origin"} info={data?.origin?.name || "неизвестно"} />
             <CharacterInfo name={"Type"} info={data?.type || "неизвестно"} />
-            <CharacterInfo name={"Location"} info={data?.location?.name || "неизвестно"} arrow={'>'}/>
+            <CharacterInfo name={"Location"} info={data?.location?.name || "неизвестно"} arrow={'>'} id={data?.id}/>
           </div>
         </div>
         <div className={s.episoge}>
