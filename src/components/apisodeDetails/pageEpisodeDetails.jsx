@@ -35,9 +35,7 @@ const PageEpisodeDetails = () => {
         <h2 className={s.main_title}>Cast</h2>
         <div className={s.card_list}>
           {characters.map((character) => (
-            <div className={s.card_item} key={character.id}>
-              <CardItem image={character.image} name={character.name} species={character.species}/>
-            </div>
+              <CardItem key={character.id} image={character.image} name={character.name} species={character.species}/>
           ))}
         </div>
       </div>

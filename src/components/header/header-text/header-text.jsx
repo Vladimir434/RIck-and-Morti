@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import s from '../header-text/header-text.module.css'
 import { useState } from 'react'
+import Menu1 from '../../../assets/menu1.svg'
+import Menu2 from '../../../assets/menu2.svg'
+
 const HeaderText = () => {
   const [isMenu,setIsMenu] = useState(false)
 
@@ -14,7 +17,7 @@ const HeaderText = () => {
       <Link to="/locations">Места</Link>
       <Link to="/episode">Эпизоды</Link>
     </div>
-    <button className={s.header__nav__img} onClick={toggleMenu}>{isMenu ? 'закрыть меню' : 'открыть меню'} </button>
+    <img className={s.header__nav__img} onClick={toggleMenu} src={isMenu ? Menu1 : Menu2} alt="" />
 {isMenu && (
   <div  className={s.header__nav__adaptiv}>
     <div  className={s.header__nav__adaptiv__wrapper}>

@@ -34,13 +34,15 @@ const Episodes = () => {
 
   return (
     <>
-      <div className={s.filter_by_name}>
-        <img src={Search} alt="" />
-        <input
-          type="text"
-          placeholder="Filter by name or episode (ex. S01 or S01E02)"
-          onChange={(e) => setName(e.target.value)}
-        />
+      <div className={s.input__wrapper}>
+        <div className={s.filter_by_name}>
+          <img src={Search} alt="" />
+          <input
+            type="text"
+            placeholder="Filter by name or episode (ex. S01 or S01E02)"
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
       </div>
       <div className={s.card__list}>
         {data.map((item, index) => (

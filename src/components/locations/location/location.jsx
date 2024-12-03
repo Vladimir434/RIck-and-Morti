@@ -47,7 +47,7 @@ const Location = () => {
       <div className={s.main}>
         <h2 className={s.main_title}>Residents</h2>
         {character.length === 0 ? (
-        <h1>No characters</h1>
+        <h1>Loading...</h1>
         ) : (
 
           <div className={s.card_list}>

@@ -2,13 +2,13 @@
   max-width: 977px;
   position: relative;
   margin: 90px auto 0;
+  padding: 0 24px;
 
 
 }
 .main_cont{
   position: relative;
   max-width: 977px;
-  min-width: 312px;
   height: auto;
   margin: 0 auto ;
 
@@ -43,4 +43,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width:460px){
+  .main_cont{
+    padding-top: 30px;
+  }
 }

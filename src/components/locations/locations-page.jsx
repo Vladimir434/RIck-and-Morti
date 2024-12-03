@@ -52,13 +52,15 @@ const LocationPage = () => {
   return (
     <>
       <AficheCharacters urlAfiche={Icon} />
-      <div className={s.filter_by_name}>
-        <img src={Search} alt="" />
-        <input
-          type="text"
-          placeholder="Filter by name or episode (ex. S01 or S01E02)"
-          onChange={(e) => setName(e.target.value)}
-        />
+      <div className={s.filter_wrapper}>
+        <div className={s.filter_by_name}>
+          <img src={Search} alt="" />
+          <input
+            type="text"
+            placeholder="Filter by name..."
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
       </div>
       <div className={s.card__list}>
         {error && <p style={{ color: "red" }}>{error}</p>}

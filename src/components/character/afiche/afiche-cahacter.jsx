@@ -17,7 +17,10 @@ const AficheCahacter = ({ img, name }) => {
             <img  src={Back} alt="неполадки" />
             GO BACK
           </Link>
+          <div className={s.image_wrapper}>
+
           <img className={s.image} src={img} alt="неполадки" />
+          </div>
           <h1 className={s.name}>{name}</h1>
         </div>
       </div>

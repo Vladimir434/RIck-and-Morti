@@ -1,5 +1,20 @@
 .afiche{
   display: flex;
   justify-content: center;
-  margin: 78px auto 16px;
+  margin: 78px 24px 16px;
+  max-width: 600px;
+  min-width: 312px;
+  height: auto;
+}
+.afiche img{
+  padding: 0 24px;
+  max-width: 326px;
+  width: 100%;
+  height: auto;
+}
+.icon_wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
